@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>a-frame sandbox</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="description" content="Hello, World! - A-Frame">
+		<!-- <script src="https://aframe.io/releases/master/aframe.js"></script> -->
+		<script src="https://rawgit.com/aframevr/aframe/8d60730/dist/aframe-master.js"></script>
+		<!-- <script src="three.js"></script> -->
+		<script src="bundle.js"></script>
+		<!-- <link type="text/css" rel="stylesheet" href="index.css"/> -->
+	</head>
+	<body>
+		 <!-- fog="color: #bc483e; near: 0; far: 65;" -->
+		 <!-- fog="type: linear; color: purple; near: 0; far: 10;" -->
+		<a-scene fog="color: #bc483e; near: 0; far: 65;" stats>
+			<!-- gridhelper="size: 5; divisions: 10; colorCenterLine: purple; colorGrid: purple;" -->
+			<a-assets>
+				<!-- <a-asset-item id="hercules-obj" src="hercules/hercules.obj"></a-asset-item>
+				<a-asset-item id="hercules-mtl" src="hercules/hercules.mtl"></a-asset-item> -->
+
+				<img id="space" src="space.jpg">
+			</a-assets>
+
+			<!-- <a-sky color="#ECECEC"></a-sky> -->
+			<a-sky src="#sky"></a-sky>
+			<!-- <a-entity id="left" hand-controls="left" controller-cursor></a-entity>
+			<a-entity id="right" hand-controls="right" controller-cursor></a-entity> -->
+
+			<!-- <a-entity obj-model="obj: #hercules-obj; mtl: #hercules-mtl"
+				scale="0.1 0.1 0.1"
+				position="0 0 -5">
+				<a-animation attribute="rotation"
+					dur="3000"
+					fill="forwards"
+					direction="a"
+					to="0 360 0"
+					repeat="indefinite"
+					easing="linear"></a-animation>
+				<a-animation attribute="position"
+					dur="4000"
+					fill="forwards"
+					direction="alternate"
+					from="0 1 -5"
+					to="0 -1 -5"
+					repeat="indefinite"></a-animation>
+			</a-entity> -->
+
+			<a-entity id="graph" graph="radius: 5"></a-entity>
+
+			<!-- <a-sky src="#sky" material="fog: false"></a-sky> -->
+			<!-- <a-ocean density="50" color="purple" opacity="0.2" width="50" depth="50"></a-ocean> -->
+
+			<!-- <a-entity id="sky"
+				geometry="primitive: sphere; radius: 65;"
+				material="shader: skyGradient; colorTop: #353449; colorBottom: #BC483E; side: back"></a-entity> -->
+			<a-entity ground></a-entity>
+			<!-- <a-entity light="type: point; color: #f4f4f4; intensity: 0.2; distance: 0" position="8 10 18"></a-entity> -->
+			<!-- <a-entity light="type: point; color: #f4f4f4; intensity: 0.6; distance: 0" position="-8 10 -18"></a-entity> -->
+			<!-- <a-entity light="type: ambient; color: #f4f4f4; intensity: 0.4;" position="-8 10 -18"></a-entity> -->
+
+			<!-- <a-pl></a-pl> -->
+			<!-- <a-plane rotation="-90 0 0" height="10" width="10" segments-height="10" segments-width="10" wireframe="true"></a-plane> -->
+			<!-- <a-entity id="graph" heightgrid="heights: 1 2 2 1;"></a-entity> -->
+
+			<!-- <a-grid material="opacity: 0.5"></a-grid> -->
+
+
+				<!-- {type: 'array', default: []},
+				// xSegments: {type: 'int', default: 1},
+				// ySegments: {type: 'int', default: 1},
+				// xSize: {type: 'number', default: 1},
+				// ySize: {type: 'number', default: 1},
+				layout: {type: 'string', default: 'ring'},
+				radius: {type: 'number', default: 1},
+				layers: {type: 'int', default: 1}, -->
+			<!-- <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+			<a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+			<a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder> -->
+			<!-- <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane> -->
+
+		</a-scene>
+	</body>
+</html>

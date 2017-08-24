@@ -1,0 +1,29 @@
+{
+  "name": "aframe-sandbox-vanilla",
+  "version": "1.0.0",
+  "description": "blah blah",
+  "dependencies": {
+    "express": "^4.14.0",
+    "hapi": "^16.0.1",
+    "ws": "^1.1.1"
+  },
+  "devDependencies": {
+
+  },
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbjw/aframe-sandbox-vanilla.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbjw/aframe-sandbox-vanilla/issues"
+  },
+  "homepage": "https://github.com/jbjw/aframe-sandbox-vanilla#readme"
+}
